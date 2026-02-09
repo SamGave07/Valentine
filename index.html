@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Valentine's Day 2026</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;900&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div id="app">
+
+    <!-- ═══════════════════════════════════════════ -->
+    <!-- PHASE 1: LAUNCHER (LoL Client Home Screen) -->
+    <!-- ═══════════════════════════════════════════ -->
+    <div id="launcher" class="phase active">
+      <div class="launcher-bg"></div>
+      <div class="launcher-nav">
+        <div class="nav-left">
+          <span class="nav-icon">♥</span>
+          <span class="nav-item active">HOME</span>
+          <span class="nav-item disabled">TFT</span>
+          <span class="nav-item disabled">CLASH</span>
+        </div>
+        <div class="nav-right">
+          <span class="nav-profile">
+            <span class="profile-name">Loutranne 🦦</span>
+          </span>
+        </div>
+      </div>
+
+      <div class="launcher-content">
+        <div class="launcher-hero">
+          <div class="launcher-logo">
+            <div class="logo-accent"></div>
+            <h1>VALENTINE'S</h1>
+            <h2>RIFT</h2>
+            <div class="logo-year">2026</div>
+          </div>
+          <p class="launcher-tagline">A special game awaits you...</p>
+        </div>
+      </div>
+
+      <div class="launcher-bottom">
+        <div class="launcher-game-mode">
+          <div class="game-mode-icon">💘</div>
+          <div class="game-mode-text">
+            <div class="game-mode-title">VALENTINE'S RIFT</div>
+            <div class="game-mode-sub">1v1 · Special Event</div>
+          </div>
+        </div>
+        <button id="play-btn" class="play-button">
+          <div class="play-button-bg"></div>
+          <span>PLAY</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- ═══════════════════════════════════ -->
+    <!-- PHASE 2: QUEUE (Finding Match)     -->
+    <!-- ═══════════════════════════════════ -->
+    <div id="queue" class="phase">
+      <div class="queue-bg"></div>
+      <div class="queue-content">
+        <div class="queue-animation">
+          <div class="queue-ring ring-1"></div>
+          <div class="queue-ring ring-2"></div>
+          <div class="queue-ring ring-3"></div>
+          <div class="queue-center">
+            <div class="queue-status">FINDING MATCH</div>
+            <div class="queue-timer" id="queue-timer">0:00</div>
+            <div class="queue-estimate">Estimated: &lt;1 min</div>
+          </div>
+        </div>
+        <div class="queue-info">
+          <div class="queue-mode">VALENTINE'S RIFT — 1v1</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ═══════════════════════════════════════ -->
+    <!-- PHASE 3: MATCH FOUND (Accept Overlay)  -->
+    <!-- ═══════════════════════════════════════ -->
+    <div id="match-found" class="overlay">
+      <div class="match-found-bg"></div>
+      <div class="match-found-content">
+        <div class="match-found-ring-container">
+          <svg class="match-ring-svg" viewBox="0 0 220 220">
+            <circle cx="110" cy="110" r="100" class="match-ring-bg-circle" />
+            <circle cx="110" cy="110" r="100" class="match-ring-progress-circle" id="match-ring" />
+          </svg>
+          <div class="match-found-inner">
+            <div class="match-found-exclaim">!</div>
+            <div class="match-found-text">MATCH FOUND</div>
+          </div>
+        </div>
+        <button id="accept-btn" class="accept-button">
+          <span>ACCEPT!</span>
+        </button>
+        <div class="match-found-players">1/2 players accepted</div>
+      </div>
+    </div>
+
+    <!-- ═══════════════════════════════════════════════ -->
+    <!-- PHASE 4: CHAMPION SELECT (Pick + Valentine)    -->
+    <!-- ═══════════════════════════════════════════════ -->
+    <div id="champ-select" class="phase">
+      <!-- Background splash art -->
+      <div class="cs-background" id="cs-background"></div>
+
+      <!-- Top bar -->
+      <div class="cs-top-bar">
+        <div class="cs-timer-section">
+          <div class="cs-timer" id="cs-timer">30</div>
+        </div>
+        <div class="cs-phase-text" id="cs-phase-text">DECLARE YOUR CHAMPION</div>
+        <div class="cs-timer-bar-container">
+          <div class="cs-timer-bar" id="cs-timer-bar"></div>
+        </div>
+      </div>
+
+      <!-- Main content area -->
+      <div class="cs-main">
+        <!-- Left: Blue team (her) -->
+        <div class="cs-team cs-blue-team">
+          <div class="cs-team-header">YOUR TEAM</div>
+          <div class="cs-player-slot" id="blue-slot">
+            <div class="cs-slot-border blue-border"></div>
+            <div class="cs-slot-splash" id="blue-splash"></div>
+            <div class="cs-slot-info">
+              <div class="cs-slot-name">Loutranne 🦦</div>
+              <div class="cs-slot-champ" id="blue-champ-name">Picking...</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Center area -->
+        <div class="cs-center">
+          <!-- Pick Phase: Champion Grid -->
+          <div class="cs-pick-area" id="pick-area">
+            <div class="cs-search-bar">
+              <input type="text" placeholder="Search" disabled class="cs-search-input">
+            </div>
+            <div class="cs-champion-grid" id="champion-grid">
+              <!-- Generated by JS -->
+            </div>
+          </div>
+
+          <!-- Valentine Phase: Valentine Grid -->
+          <div class="cs-valentine-area" id="valentine-area" style="display:none">
+            <div class="cs-valentine-title">💘 WHO WILL BE YOUR VALENTINE? 💘</div>
+            <div class="cs-valentine-grid" id="valentine-grid">
+              <!-- Generated by JS -->
+            </div>
+          </div>
+
+          <!-- Action button area -->
+          <div class="cs-action-bar">
+            <button id="lock-in-btn" class="lock-in-button" disabled>
+              <span>LOCK IN</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Right: Red team (opponent/valentine) -->
+        <div class="cs-team cs-red-team">
+          <div class="cs-team-header">ENEMY TEAM</div>
+          <div class="cs-player-slot" id="red-slot">
+            <div class="cs-slot-border red-border"></div>
+            <div class="cs-slot-splash" id="red-splash"></div>
+            <div class="cs-slot-info">
+              <div class="cs-slot-name">???</div>
+              <div class="cs-slot-champ" id="red-champ-name">Waiting...</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ═══════════════════════════ -->
+    <!-- ERROR MODAL                -->
+    <!-- ═══════════════════════════ -->
+    <div id="error-modal" class="overlay" style="display:none">
+      <div class="error-modal-backdrop"></div>
+      <div class="error-modal-content">
+        <div class="error-modal-border"></div>
+        <div class="error-modal-icon">✖</div>
+        <div class="error-modal-title" id="error-title">ERROR</div>
+        <div class="error-modal-message" id="error-message">Something went wrong!</div>
+        <button id="error-ok-btn" class="error-ok-button">OK</button>
+      </div>
+    </div>
+
+    <!-- ═══════════════════════════════════ -->
+    <!-- PHASE 5: LOADING SCREEN (1v1)      -->
+    <!-- ═══════════════════════════════════ -->
+    <div id="loading-screen" class="phase">
+      <div class="loading-bg"></div>
+      <div class="loading-main">
+        <div class="loading-side loading-blue">
+          <div class="loading-card blue-card">
+            <div class="loading-card-art" id="loading-blue-art"></div>
+            <div class="loading-card-overlay"></div>
+            <div class="loading-card-info">
+              <div class="loading-card-rank">💎</div>
+              <div class="loading-card-summoner">Loutranne 🦦</div>
+              <div class="loading-card-champion" id="loading-blue-champ">Lux</div>
+            </div>
+          </div>
+          <div class="loading-progress">
+            <div class="loading-progress-bar" id="loading-blue-bar"></div>
+          </div>
+        </div>
+
+        <div class="loading-center-divider">
+          <div class="loading-vs">VS</div>
+        </div>
+
+        <div class="loading-side loading-red">
+          <div class="loading-card red-card">
+            <div class="loading-card-art" id="loading-red-art"></div>
+            <div class="loading-card-overlay"></div>
+            <div class="loading-card-info">
+              <div class="loading-card-rank">💘</div>
+              <div class="loading-card-summoner">SamGave</div>
+              <div class="loading-card-champion" id="loading-red-champ">???</div>
+            </div>
+          </div>
+          <div class="loading-progress">
+            <div class="loading-progress-bar" id="loading-red-bar"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="loading-bottom">
+        <div class="loading-tip">
+          <span class="loading-tip-icon">💡</span>
+          <span class="loading-tip-label">DID YOU KNOW: </span>
+          <span class="loading-tip-text" id="loading-tip-text">I'm the best boyfriend ever ❤️</span>
+        </div>
+        <div class="loading-map-name">VALENTINE'S RIFT — HOWLING ABYSS</div>
+      </div>
+    </div>
+
+    <!-- ═══════════════════════════════════ -->
+    <!-- PHASE 6: FINAL MESSAGE             -->
+    <!-- ═══════════════════════════════════ -->
+    <div id="final-message" class="phase">
+      <div class="final-bg"></div>
+      <div class="final-particles" id="final-particles"></div>
+      <div class="final-content">
+        <div class="final-frame">
+          <div class="final-frame-border"></div>
+          <div class="final-emoji">💕</div>
+          <h1 class="final-title" id="final-title">Happy Valentine's Day!</h1>
+          <div class="final-divider"></div>
+          <p class="final-message" id="final-msg">
+            [Your beautiful love message here — replace this placeholder with something from the heart!]
+          </p>
+          <div class="final-signature">— With all my love ❤️</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,14 @@
+# Server artifacts
+server.pid
+server.log
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
