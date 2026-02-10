@@ -1,5 +1,14 @@
 /* ═══════════════════════════════════════════════════
    VALENTINE'S RIFT — LoL Client Themed CSS
+   ═══════════════════════════════════════════════════
+   
+   IMAGE POSITIONING QUICK REFERENCE:
+   - Champ Select Background:  #cs-background  (line ~575)
+   - Blue Team Slot (her):     #blue-splash    (line ~710)
+   - Red Team Slot (him):      #red-splash     (line ~717)
+   - Loading Blue Card (her):  #loading-blue-art  (line ~1113)
+   - Loading Red Card (him):   #loading-red-art   (line ~1119)
+   
    ═══════════════════════════════════════════════════ */
 
 /* ──── ROOT VARIABLES (LoL Client Palette) ──── */
@@ -575,9 +584,16 @@ html, body {
   inset: 0;
   z-index: 0;
   background-size: cover;
-  background-position: center;
+  background-position: center center;
   opacity: 0;
   transition: opacity 0.8s ease, background-image 0.8s ease;
+}
+
+/* Background splash control */
+#cs-background {
+  /* Louanne's photo as background during champ select */
+  background-position: center center !important;
+  background-size: cover !important;
 }
 
 .cs-background.visible {
@@ -706,10 +722,23 @@ html, body {
   position: absolute;
   inset: 0;
   background-size: cover;
-background-position: calc(50% - 130px) top;
+  background-position: center center;
   opacity: 0;
   transition: opacity 0.5s ease;
   z-index: 1;
+}
+
+/* Individual champ select slot controls */
+#blue-splash {
+  /* Louanne's photo in blue team slot (LEFT SIDE) */
+  background-position: 65% center;
+  background-size: cover;
+}
+
+#red-splash {
+  /* SamCassio in red team slot (RIGHT SIDE) */
+  background-position: 100% center;
+  background-size: cover;
 }
 
 .cs-slot-splash.visible {
@@ -922,6 +951,19 @@ background-position: calc(50% - 130px) top;
   object-fit: cover;
 }
 
+/* Boyfriend card specific positioning */
+.valentine-card-boyfriend .valentine-card-img {
+  /* Adjust background positioning for Cassiopeia icon in circular frame */
+  background-size: cover;
+  background-position: center center;
+}
+
+.valentine-card-boyfriend .valentine-card-img img {
+  /* Fine-tune the head positioning in the circle */
+  transform: scale(1.0);
+  object-position: 50% 50%;
+}
+
 .valentine-card-img .valentine-mystery {
   font-size: 36px;
 }
@@ -1101,7 +1143,20 @@ background-position: calc(50% - 130px) top;
   position: absolute;
   inset: 0;
   background-size: cover;
-  background-position: center top;
+  background-position: center center;
+}
+
+/* Individual loading art controls (actual loading screen before final message) */
+#loading-blue-art {
+  /* Louanne's photo positioning */
+  background-position: 70% center;
+  background-size: cover;
+}
+
+#loading-red-art {
+  /* SamCassio positioning */
+  background-position: 100% center;
+  background-size: cover;
 }
 
 .loading-card-overlay {

@@ -23,49 +23,49 @@ const CONFIG = {
   herChampion: {
     name: "Lux",
     icon: "https://ddragon.leagueoflegends.com/cdn/14.24.1/img/champion/Lux.png",
-    splash: "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Lux_0.jpg",
-    loading: "https://ddragon.leagueoflegends.com/cdn/img/champion/loading/Lux_0.jpg",
+    splash: "assets/Louanne_2.png",
+    loading: "assets/Louanne_2.png",
   },
 
   // Decoy champions in the pick grid (just for show, unclickable)
   decoyChampions: [
-    { name: "Ahri",     icon: "https://ddragon.leagueoflegends.com/cdn/14.24.1/img/champion/Ahri.png" },
-    { name: "Jinx",     icon: "https://ddragon.leagueoflegends.com/cdn/14.24.1/img/champion/Jinx.png" },
-    { name: "Ezreal",   icon: "https://ddragon.leagueoflegends.com/cdn/14.24.1/img/champion/Ezreal.png" },
-    { name: "Leona",    icon: "https://ddragon.leagueoflegends.com/cdn/14.24.1/img/champion/Leona.png" },
-    { name: "Morgana",  icon: "https://ddragon.leagueoflegends.com/cdn/14.24.1/img/champion/Morgana.png" },
-    { name: "Sona",     icon: "https://ddragon.leagueoflegends.com/cdn/14.24.1/img/champion/Sona.png" },
-    { name: "Rakan",    icon: "https://ddragon.leagueoflegends.com/cdn/14.24.1/img/champion/Rakan.png" },
-    { name: "Xayah",    icon: "https://ddragon.leagueoflegends.com/cdn/14.24.1/img/champion/Xayah.png" },
-    { name: "Senna",    icon: "https://ddragon.leagueoflegends.com/cdn/14.24.1/img/champion/Senna.png" },
-    { name: "Miss Fortune", icon: "https://ddragon.leagueoflegends.com/cdn/14.24.1/img/champion/MissFortune.png" },
-    { name: "Ashe",     icon: "https://ddragon.leagueoflegends.com/cdn/14.24.1/img/champion/Ashe.png" },
-    { name: "Lulu",     icon: "https://ddragon.leagueoflegends.com/cdn/14.24.1/img/champion/Lulu.png" },
-    { name: "Nami",     icon: "https://ddragon.leagueoflegends.com/cdn/14.24.1/img/champion/Nami.png" },
-    { name: "Soraka",   icon: "https://ddragon.leagueoflegends.com/cdn/14.24.1/img/champion/Soraka.png" },
-    { name: "Janna",    icon: "https://ddragon.leagueoflegends.com/cdn/14.24.1/img/champion/Janna.png" },
-    { name: "Caitlyn",  icon: "https://ddragon.leagueoflegends.com/cdn/14.24.1/img/champion/Caitlyn.png" },
-    { name: "Vi",       icon: "https://ddragon.leagueoflegends.com/cdn/14.24.1/img/champion/Vi.png" },
-    { name: "Seraphine",icon: "https://ddragon.leagueoflegends.com/cdn/14.24.1/img/champion/Seraphine.png" },
+    { name: "Ahri",     icon: "assets/champions/Ahri.png" },
+    { name: "Jinx",     icon: "assets/champions/Jinx.png" },
+    { name: "Ezreal",   icon: "assets/champions/Ezreal.png" },
+    { name: "Leona",    icon: "assets/champions/Leona.png" },
+    { name: "Morgana",  icon: "assets/champions/Morgana.png" },
+    { name: "Sona",     icon: "assets/champions/Sona.png" },
+    { name: "Rakan",    icon: "assets/champions/Rakan.png" },
+    { name: "Xayah",    icon: "assets/champions/Xayah.png" },
+    { name: "Senna",    icon: "assets/champions/Senna.png" },
+    { name: "Miss Fortune", icon: "assets/champions/MissFortune.png" },
+    { name: "Ashe",     icon: "assets/champions/Ashe.png" },
+    { name: "Lulu",     icon: "assets/champions/Lulu.png" },
+    { name: "Nami",     icon: "assets/champions/Nami.png" },
+    { name: "Soraka",   icon: "assets/champions/Soraka.png" },
+    { name: "Janna",    icon: "assets/champions/Janna.png" },
+    { name: "Caitlyn",  icon: "assets/champions/Caitlyn.png" },
+    { name: "Vi",       icon: "assets/champions/Vi.png" },
+    { name: "Seraphine",icon: "assets/champions/Seraphine.png" },
   ],
 
   // Valentine options — CUSTOMIZE THESE!
   // The "correct" one has isCorrect: true
   valentineOptions: [
     {
-      id: "warwick",
-      name: "Warwick",
-      icon: "https://ddragon.leagueoflegends.com/cdn/14.24.1/img/champion/Warwick.png",
-      splash: "https://ddragon.leagueoflegends.com/cdn/img/champion/loading/Warwick_0.jpg",
+      id: "teemo",
+      name: "Teemo",
+      icon: "assets/valentines/Teemo.png",
+      splash: "assets/valentines/Teemo_0.jpg",
       isCorrect: false,
-      errorTitle: "HOWLING AT THE WRONG MOON!",
-      errorMessage: "Warwick is a lone wolf who only has eyes for the moon... and maybe a few other things, but definitely not you. Better luck next time, love!",
+      errorTitle: "NOPE!",
+      errorMessage: "Captain Teemo reporting for rejection! 🍄\n\nToo small, too sneaky, and way too many shrooms in his heart. You deserve better!",
     },
     {
       id: "draven",
       name: "Draven",
-      icon: "https://ddragon.leagueoflegends.com/cdn/14.24.1/img/champion/Draven.png",
-      splash: "https://ddragon.leagueoflegends.com/cdn/img/champion/loading/Draven_0.jpg",
+      icon: "assets/valentines/Draven.png",
+      splash: "assets/valentines/Draven_0.jpg",
       isCorrect: false,
       errorTitle: "NICE TRY!",
       errorMessage: "Welcome to the League of Draven! 🪓\n\nUnfortunately, Draven only has room in his heart for... Draven. He's already taken — by himself.",
@@ -73,8 +73,8 @@ const CONFIG = {
     {
       id: "boyfriend",
       name: "SamGave (AKA best boyfriend ever)",
-      icon: null,  // Will show a mystery heart icon
-      splash: null,  // Replace with your photo later!
+      icon: "assets/SamIcon.png",
+      splash: "assets/SamCassio.png",
       isCorrect: true,
       errorTitle: "",
       errorMessage: "",
@@ -82,8 +82,8 @@ const CONFIG = {
     {
       id: "yasuo",
       name: "Yasuo",
-      icon: "https://ddragon.leagueoflegends.com/cdn/14.24.1/img/champion/Yasuo.png",
-      splash: "https://ddragon.leagueoflegends.com/cdn/img/champion/loading/Yasuo_0.jpg",
+      icon: "assets/valentines/Yasuo.png",
+      splash: "assets/valentines/Yasuo_0.jpg",
       isCorrect: false,
       errorTitle: "ERROR 0/10",
       errorMessage: "Your Valentine has disconnected! ⚔️\n\nYasuo went 0/10 and is still chasing the 0/10 powerspike. He's not coming back. Try again!",
@@ -91,8 +91,8 @@ const CONFIG = {
     {
       id: "quentin",
       name: "Quentin",
-      icon: "https://ddragon.leagueoflegends.com/cdn/14.24.1/img/champion/Thresh.png",
-      splash: "https://ddragon.leagueoflegends.com/cdn/img/champion/loading/Thresh_0.jpg",
+      icon: "assets/valentines/Quentin.png",
+      splash: "assets/valentines/Thresh_0.jpg",
       isCorrect: false,
       errorTitle: "MAIS NAN BESTIEEEEEE",
       errorMessage: "Je sais que je suis un léopard beau gosse mais t'as un mec, calme toi",
@@ -423,6 +423,11 @@ function buildValentineGrid() {
     card.className = "valentine-card";
     card.dataset.id = option.id;
 
+    // Add special class for boyfriend card
+    if (option.isCorrect) {
+      card.classList.add("valentine-card-boyfriend");
+    }
+
     const imgContainer = document.createElement("div");
     imgContainer.className = "valentine-card-img";
 
@@ -662,4 +667,106 @@ document.addEventListener("DOMContentLoaded", () => {
     const img = new Image();
     img.src = src;
   });
+
+  // Debug mode: Arrow keys to navigate phases
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "ArrowRight") {
+      navigateDebugPhase("next");
+    } else if (e.key === "ArrowLeft") {
+      navigateDebugPhase("prev");
+    }
+  });
 });
+
+// ──────────────────────────────────────────────
+// DEBUG MODE: Phase Navigation
+// ──────────────────────────────────────────────
+
+const DEBUG_PHASES = [
+  "launcher",
+  "queue",
+  "match-found",
+  "champ-select",
+  "loading-screen",
+  "final-message"
+];
+
+function navigateDebugPhase(direction) {
+  // Find current phase index
+  let currentIndex = DEBUG_PHASES.indexOf(STATE.currentPhase);
+  
+  // Handle overlays separately
+  if (document.getElementById("match-found").classList.contains("active")) {
+    currentIndex = DEBUG_PHASES.indexOf("match-found");
+  }
+
+  if (currentIndex === -1) currentIndex = 0;
+
+  // Calculate next index
+  let nextIndex;
+  if (direction === "next") {
+    nextIndex = (currentIndex + 1) % DEBUG_PHASES.length;
+  } else {
+    nextIndex = (currentIndex - 1 + DEBUG_PHASES.length) % DEBUG_PHASES.length;
+  }
+
+  const nextPhase = DEBUG_PHASES[nextIndex];
+
+  // Clear any running timers
+  clearInterval(STATE.queueInterval);
+  clearInterval(STATE.csTimerInterval);
+
+  // Hide all overlays
+  hideOverlay("match-found");
+  hideOverlay("error-modal");
+
+  // Navigate to next phase
+  switch(nextPhase) {
+    case "launcher":
+      showPhase("launcher");
+      break;
+    case "queue":
+      showPhase("queue");
+      STATE.queueTimer = 0;
+      DOM.queueTimer.textContent = "0:00";
+      break;
+    case "match-found":
+      showPhase("queue"); // Need a base phase
+      showOverlay("match-found");
+      DOM.matchRing.style.strokeDashoffset = "0";
+      break;
+    case "champ-select":
+      showPhase("champ-select");
+      if (!STATE.selectedChamp) {
+        // Auto-select her champion for debug
+        STATE.selectedChamp = CONFIG.herChampion;
+        DOM.csBackground.style.backgroundImage = `url(${CONFIG.herChampion.splash})`;
+        DOM.csBackground.classList.add("visible");
+        DOM.blueSplash.style.backgroundImage = `url(${CONFIG.herChampion.splash})`;
+        DOM.blueSplash.classList.add("visible");
+        DOM.blueChampName.textContent = CONFIG.herChampion.name;
+      }
+      startPickPhase();
+      break;
+    case "loading-screen":
+      showPhase("loading-screen");
+      // Set up loading screen with default data
+      DOM.loadingBlueArt.style.backgroundImage = `url(${CONFIG.herChampion.loading})`;
+      DOM.loadingBlueChamp.textContent = CONFIG.herChampion.name;
+      const correctValentine = CONFIG.valentineOptions.find(v => v.isCorrect);
+      if (correctValentine && correctValentine.splash) {
+        DOM.loadingRedArt.style.backgroundImage = `url(${correctValentine.splash})`;
+      }
+      DOM.loadingRedChamp.textContent = CONFIG.hisName;
+      DOM.loadingBlueBar.style.width = "50%";
+      DOM.loadingRedBar.style.width = "50%";
+      break;
+    case "final-message":
+      showPhase("final-message");
+      DOM.finalTitle.textContent = CONFIG.finalTitle;
+      DOM.finalMsg.textContent = CONFIG.finalMessage;
+      break;
+  }
+
+  console.log(`[DEBUG] Navigated to: ${nextPhase}`);
+}
