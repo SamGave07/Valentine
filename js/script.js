@@ -80,13 +80,13 @@ const CONFIG = {
       errorMessage: "",
     },
     {
-      id: "yasuo",
-      name: "Yasuo",
+      id: "paul",
+      name: "Paul",
       icon: "assets/valentines/Yasuo.png",
       splash: "assets/valentines/Yasuo_0.jpg",
       isCorrect: false,
       errorTitle: "ERROR 0/10",
-      errorMessage: "Your Valentine has disconnected! ⚔️\n\nYasuo went 0/10 and is still chasing the 0/10 powerspike. He's not coming back. Try again!",
+      errorMessage: "Jsuis gay wsh, laisse moi tranquille 😤",
     },
     {
       id: "quentin",
