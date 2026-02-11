@@ -53,22 +53,13 @@ const CONFIG = {
   // The "correct" one has isCorrect: true
   valentineOptions: [
     {
-      id: "teemo",
-      name: "Teemo",
-      icon: "assets/valentines/Teemo.png",
-      splash: "assets/valentines/Teemo_0.jpg",
+      id: "paul",
+      name: "Paul",
+      icon: "assets/valentines/Paul.jpg",
+      splash: "assets/valentines/Yasuo_0.jpg",
       isCorrect: false,
-      errorTitle: "NOPE!",
-      errorMessage: "Captain Teemo reporting for rejection! 🍄\n\nToo small, too sneaky, and way too many shrooms in his heart. You deserve better!",
-    },
-    {
-      id: "draven",
-      name: "Draven",
-      icon: "assets/valentines/Draven.png",
-      splash: "assets/valentines/Draven_0.jpg",
-      isCorrect: false,
-      errorTitle: "NICE TRY!",
-      errorMessage: "Welcome to the League of Draven! 🪓\n\nUnfortunately, Draven only has room in his heart for... Draven. He's already taken — by himself.",
+      errorTitle: "Ben voyons",
+      errorMessage: "Faudra te battre avec Lilian d'abord, mais t'as pas un mec??",
     },
     {
       id: "boyfriend",
@@ -78,15 +69,6 @@ const CONFIG = {
       isCorrect: true,
       errorTitle: "",
       errorMessage: "",
-    },
-    {
-      id: "paul",
-      name: "Paul",
-      icon: "assets/valentines/Yasuo.png",
-      splash: "assets/valentines/Yasuo_0.jpg",
-      isCorrect: false,
-      errorTitle: "ERROR 0/10",
-      errorMessage: "Jsuis gay wsh, laisse moi tranquille 😤",
     },
     {
       id: "quentin",
@@ -101,22 +83,18 @@ const CONFIG = {
 
   // Error message when timer runs out
   timeoutError: {
-    title: "DODGE PENALTY!",
-    message: "⏰ Time's up! Your Valentine escaped!\n\nYou failed to pick in time. The queue has been reset. Don't let them get away this time!",
+    title: "TIME IS OUT! ⏰",
+    message: "Comment ça tu hésites ?? T'as pas besoin de plus de 30s pour choisir ton Valentin, surtout quand je fais parti des choix 😘\n\nAllez, recommence et plus vite que ça.",
   },
 
   // Final message — CUSTOMIZE THIS!
-  finalTitle: "Happy Valentine's Day! 💕",
-  finalMessage: "[Your beautiful love message here — replace this placeholder with something from the heart!]",
-  finalSignature: "— With all my love ❤️",
+  finalTitle: "Joyeuse St Valentin",
+  finalMessage: "Trop hâte de repasser du temps avec toi ce weekend, les 2 dernières années à tes côtés étaient géniales et j'ai hâte qu'on visite l'Asie ensemble l'année prochain",
+  finalSignature: "— Je t'aime fort ma petite loutre",
 
   // Loading screen tips
   loadingTips: [
-    "You're the most beautiful player in this game ❤️",
-    "Did you know? You have a 100% win rate in my heart 💕",
-    "Pro tip: Always pick the mysterious Valentine 🤫",
-    "Fun fact: This game was made just for you 🎮",
-    "Loading your happily ever after... ✨",
+    "SamGave is the best boyfriend ever.",
   ],
 };
 
