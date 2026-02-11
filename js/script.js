@@ -13,16 +13,16 @@ const CONFIG = {
   hisName: "SamGave",
 
   // Timers (in seconds)
-  queueDuration: 0 /* 4 */,          // How long "finding match" takes
+  queueDuration: 4,          // How long "finding match" takes
   matchAcceptDuration: 10,    // Time to accept match
-  pickPhaseDuration: 2330,      // Time to pick champion
+  pickPhaseDuration: 30,      // Time to pick champion
   valentinePhaseDuration: 30, // Time to pick valentine
   loadingDuration: 5,         // Loading screen duration
 
   // Champion data — She can only pick Lux (replace with her pic later)
   herChampion: {
     name: "Lux",
-    icon: "https://ddragon.leagueoflegends.com/cdn/14.24.1/img/champion/Lux.png",
+    icon: "assets/champions/Lux.png",
     splash: "assets/Louanne_2.png",
     loading: "assets/Louanne_2.png",
   },
