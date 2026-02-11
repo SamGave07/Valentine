@@ -89,7 +89,7 @@ const CONFIG = {
 
   // Final message — CUSTOMIZE THIS!
   finalTitle: "Joyeuse St Valentin",
-  finalMessage: "Trop hâte de repasser du temps avec toi ce weekend, les 2 dernières années à tes côtés étaient géniales et j'ai hâte qu'on visite l'Asie ensemble l'année prochain",
+  finalMessage: "Trop hâte de la passer avec toi ce weekend, les 2 dernières années à tes côtés étaient géniales et hâte de visiter l'Asie avec toi ❤️",
   finalSignature: "— Je t'aime fort ma petite loutre",
 
   // Loading screen tips
